@@ -1,0 +1,117 @@
+
+html{
+  box-sizing: inherit; 
+}
+
+body{
+  margin: 0, auto; 
+  background-color:hsl(217, 54%, 11%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-card{
+  background-color: hsl(216, 50%, 16%);
+  max-width: 300px;
+  padding: 15px;
+  border: 1px solid hsl(215, 32%, 27%);
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.top-card img {
+  width: 100%;
+  height: 50%;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+h3{
+  color: white;
+  font-weight: bold;
+}
+
+p{
+  color:grey;
+}
+
+.eth-info{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.author{
+  display:flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid grey;
+}
+.author img{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px; 
+  border: 1px solid white;
+}
+
+h4{
+  color: grey;
+  font-weight: 300;
+  font-size: 15px;
+  
+}
+
+.author-name{
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.author-name:hover{
+  cursor: pointer;
+  color: #53eaff;
+  font-weight: bold;
+  transition: ease-in-out;
+}
+
+.info, .time{
+  display:flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price{
+  color: #53eaff;
+}
+
+h3:hover{
+  cursor: pointer;
+  color: #53eaff;
+}
+.top-card {
+  position: relative; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(83, 234, 255 , 0.5);  
+  border-radius: 10px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
+}
+
+.top-card:hover .overlay {
+  opacity: 1; 
+  cursor: pointer;
+}
+
+
